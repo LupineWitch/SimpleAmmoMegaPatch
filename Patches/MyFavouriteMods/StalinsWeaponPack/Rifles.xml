@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- PTRD-->
+
+    <Operation Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Gun_PTRD41T4ndy"]/comps</xpath>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_PTRD41T4ndy"]</xpath>
+        <value>
+          <comps />
+        </value>
+      </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Gun_PTRD41T4ndy"]/comps</xpath>
+      <value>
+        <li Class="Reloading.CompProperties_Reloadable">
+          <compClass>Reloading.CompReloadable</compClass>
+          <MaxShots>1</MaxShots>
+          <AmmoFilter>
+            <thingDefs>
+              <li>FF_Ammunition_Industrial</li>
+            </thingDefs>
+          </AmmoFilter>
+          <ItemsPerShot>1</ItemsPerShot>
+          <ReloadTimePerShot>1.5</ReloadTimePerShot>
+  		<ReloadSound>Standard_Reload</ReloadSound>
+            <GenerateAmmo>
+              <FF_Ammunition_Industrial>30~40</FF_Ammunition_Industrial>
+            </GenerateAmmo>
+        </li>
+      </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+      <xpath>Defs/ThingDef[defName="Gun_PTRD41T4ndy"]</xpath>
+      <value>
+        <li Class="AnimalBehaviours.AnimalStatExtension">
+          <statToAdd>
+            <li>FF_Ammo_Type</li>
+          </statToAdd>
+          <statValues>
+            <li>FF_Industrial_Ammo</li>
+          </statValues>
+          <statDescriptions>
+            <li>FF_Industrial_Desc</li>
+          </statDescriptions>
+        </li>
+      </value>
+    </Operation>
+
+    <!-- SVT-40 -->
+
+      <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Gun_SVT40T4ndy"]/comps</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Gun_SVT40T4ndy"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </Operation>
+
+      <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_SVT40T4ndy"]/comps</xpath>
+        <value>
+          <li Class="Reloading.CompProperties_Reloadable">
+            <compClass>Reloading.CompReloadable</compClass>
+            <MaxShots>10</MaxShots>
+            <AmmoFilter>
+              <thingDefs>
+                <li>FF_Ammunition_Industrial</li>
+              </thingDefs>
+            </AmmoFilter>
+            <ItemsPerShot>1</ItemsPerShot>
+            <ReloadTimePerShot>0.22</ReloadTimePerShot>
+        <ReloadSound>Standard_Reload</ReloadSound>
+              <GenerateAmmo>
+                <FF_Ammunition_Industrial>30~60</FF_Ammunition_Industrial>
+              </GenerateAmmo>
+          </li>
+        </value>
+      </Operation>
+
+      <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Gun_SVT40T4ndy"]</xpath>
+        <value>
+          <li Class="AnimalBehaviours.AnimalStatExtension">
+            <statToAdd>
+              <li>FF_Ammo_Type</li>
+            </statToAdd>
+            <statValues>
+              <li>FF_Industrial_Ammo</li>
+            </statValues>
+            <statDescriptions>
+              <li>FF_Industrial_Desc</li>
+            </statDescriptions>
+          </li>
+        </value>
+      </Operation>
+
+      <!-- SKS -->
+
+        <Operation Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Gun_SKST4ndy"]/comps</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Gun_SKST4ndy"]</xpath>
+            <value>
+              <comps />
+            </value>
+          </nomatch>
+        </Operation>
+
+        <Operation Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Gun_SKST4ndy"]/comps</xpath>
+          <value>
+            <li Class="Reloading.CompProperties_Reloadable">
+              <compClass>Reloading.CompReloadable</compClass>
+              <MaxShots>10</MaxShots>
+              <AmmoFilter>
+                <thingDefs>
+                  <li>FF_Ammunition_Industrial</li>
+                </thingDefs>
+              </AmmoFilter>
+              <ItemsPerShot>1</ItemsPerShot>
+              <ReloadTimePerShot>0.15</ReloadTimePerShot>
+          <ReloadSound>Standard_Reload</ReloadSound>
+                <GenerateAmmo>
+                  <FF_Ammunition_Industrial>30~60</FF_Ammunition_Industrial>
+                </GenerateAmmo>
+            </li>
+          </value>
+        </Operation>
+
+        <Operation Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Gun_SKST4ndy"]</xpath>
+          <value>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+              <statToAdd>
+                <li>FF_Ammo_Type</li>
+              </statToAdd>
+              <statValues>
+                <li>FF_Industrial_Ammo</li>
+              </statValues>
+              <statDescriptions>
+                <li>FF_Industrial_Desc</li>
+              </statDescriptions>
+            </li>
+          </value>
+        </Operation>
+
+</Patch>

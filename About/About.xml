@@ -1,0 +1,25 @@
+<ModMetaData>
+    <name>Simple Ammunition - mega patch collection </name>
+    <author>Lupine Witch</author>
+    <supportedVersions>
+        <li>1.3</li>
+    </supportedVersions>
+    <packageId>lupinewitch.patches.simpleammo</packageId>
+    <url></url>
+    <description>
+A collection of compatibility patches for various weapon mods.
+    </description>
+    <modDependencies>
+        <li>
+            <packageId>freefolk.ammunition.remastered</packageId>
+            <displayName>Simple Ammunition Remastered</displayName>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+            <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2557155571</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+	<loadAfter>
+    <!-- Add patched modes to loadAfter list -->
+		<li>freefolk.ammunition.remastered</li>
+    <li>T4ndy.StalinsWeaponPack</li>
+	</loadAfter>
+</ModMetaData>
